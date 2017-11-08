@@ -1,5 +1,5 @@
 .list{
-  width: 50%;
+  width: 560px;
   margin: 0 auto;
 }
 .list li{
@@ -7,6 +7,10 @@
   list-style-type: none;
   box-shadow: 0px 1px 10px 0px;
   border-radius: 3px;
+  padding-top: 10px;
+}
+.user-section table{
+  width: 100%;
 }
 .user-details-section{
   width: 53%;
@@ -24,13 +28,33 @@
   font-family: monospace;
 }
 .profile-pic{
-  width: 46%;
-  display: inline-block;
+  width: 25%;
+  padding-right: 5px;
 }
 .profile-pic img{
-  width: 100%;
+  width: 95%;
   height: auto;
+  border-radius: 50%;
 }
 .description{
-  padding: 10px 15px;
+  padding: 10px 20px;
+  font-family: 'Questrial', sans-serif;
+  color: #716e6e;
+  font-size: large;
+  height: 165px;
+  overflow: hidden;
+  position: relative;
+}
+.description > span{
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+.description a{
+  position: absolute;
+  bottom: 5px;
+  right: 25px;
+}
+a:active a+text{
+  height: auto;
 }
