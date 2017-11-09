@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Luckiest+Guy|Michroma|Racing+Sans+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Luckiest+Guy|Michroma|Quando|Racing+Sans+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Luckiest+Guy|Michroma|Quando|Racing+Sans+One|Titan+One" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 <link rel="stylesheet" href="bootstrap.css">
 <link rel="stylesheet" href="font-awesome.css">
@@ -15,10 +18,8 @@
 <div ng-app="infinitescroll" ng-controller="appController">
 
 <nav class="">
-  <div class="restart-play" ng-click="restartPlay()">
-    <span class="fa fa-refresh"></span>
-    <span></span>
-  </div>
+  <div class="logo"> Infinite Scroll </div>
+  <input type="number" ng-model="numberOfItems">
 </nav>
 
 <div class="list-wrapper">
