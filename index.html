@@ -3,9 +3,10 @@
 <title>La Scroll De Infinitia</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="font-awesome.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 <link rel="stylesheet" href="bootstrap.css">
+<link rel="stylesheet" href="font-awesome.css">
 <link rel="stylesheet" href="infiniteScroll.css">
 <script src="angular.1.6.4.js"></script>
 <script src="controller.js"></script>
@@ -22,14 +23,16 @@
 
 <div class="list-wrapper">
   <ul class="list">
-    <li>
+    <li ng-repeat="feed in allFeeds">
       <div class="user-section">
         <table>
           <tr>
             <td>
               <div class="user-details-section">
-                <div class="query-title"> Kung Fu Panda </div>
-                <div class="user-name"> Michael Jackson </div>
+                <div class="query-title"><span class="fa fa-hashtag"></span> {{feed.hastag}} </div>
+                <div class="query"> {{feed.query}} </div>
+                <div class="user-name"><span class="fa fa-user-circle-o"></span> {{feed.username}} </div>
+                <div class="time"><span class="fa fa-clock-o"></span> {{feed.time}} </div>
               </div>
             </td>
             <td class="profile-pic">
@@ -38,7 +41,7 @@
           </tr>
         </table>
 
-        
+
       </div>
       <div class="description">
         <span class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -51,7 +54,7 @@
            quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui
           in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
         </span>
-        <a href="javascript:void(0)" ng-click="showMore($event)">(more)</a> 
+        <a href="javascript:void(0)" class="read-more" for="readMore" ng-click="showMore($event)">(more)</a>
        </div>
     </li>
   </ul>
